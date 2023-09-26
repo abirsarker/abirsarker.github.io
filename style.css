@@ -6,94 +6,7 @@ body {
   color: #212121;
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 14px;
-  line-height: 1.6;
-  margin-top: 4em;
   position: relative;
-  background-color: beige;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Raleway, Helvetica, sans-serif;
-  text-transform: uppercase;
-}
-
-h1 {
-  font-size: 36px;
-  letter-spacing: 2px;
-}
-
-span {
-  color: #9400d3;
-}
-
-h2 {
-  font-size: 56px;
-  color: #9400d3;
-  line-height: 3;
-}
-
-/*----------------------
-Layout
------------------------*/
-
-section .row {
-  max-width: 1000px;
-}
-
-/*----------------------
-Menu
------------------------*/
-
-.navbar {
-  background: #fff;
-}
-
-/* Hamburger menu icon */
-
-.navbar-toggler {
-  border: none;
-}
-
-.navbar-toggler:focus {
-  outline: none;
-}
-
-.navbar-toggler-icon {
-  color: black;
-}
-
-/* Navbar links */
-
-.navbar-nav .nav-link {
-  color: #212121 !important;
-}
-
-.navbar-nav .nav-link:focus,
-.navbar-nav .nav-link:hover {
-  color: #9e9e9e !important;
-}
-
-.navbar .active {
-  color: #9400d3 !important;
-}
-
-nav a {
-  font-size: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-/*----------------------
-About
------------------------*/
-
-#about {
-  height: 60vh;
 }
 
 .profile {
@@ -103,190 +16,106 @@ About
   object-fit: cover;
 }
 
-.title {
-  min-width: 0px;
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* Typed.js */
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+#about-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+#about-card h5 {
+  font-weight: 300;
+  color: white;
+  text-transform: capitalize;
 }
 
-@-moz-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+#about-card p {
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 1px;
 }
 
-.cursor {
-  animation: blink 0.7s infinite;
+.exp-card {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  color: white;
+  background-color: #23a6d5;
 }
-
-/*----------------------
-Portfolio
------------------------*/
+.exp-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
 
 #portfolio {
-  max-width: 900px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='600' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1031%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c144 C 57.6%2c122.4 172.8%2c16.6 288%2c36 C 403.2%2c55.4 460.8%2c242 576%2c241 C 691.2%2c240 748.8%2c40 864%2c31 C 979.2%2c22 1036.8%2c189.8 1152%2c196 C 1267.2%2c202.2 1382.4%2c88.8 1440%2c62L1440 560L0 560z' fill='rgba(238%2c 119%2c 82%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c301 C 144%2c331.2 432%2c447.6 720%2c452 C 1008%2c456.4 1296%2c348.8 1440%2c323L1440 560L0 560z' fill='rgba(35%2c 166%2c 213%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1031'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  margin-top: 5rem;
 }
 
-#portfolio p {
-  max-width: 580px;
-  margin: 0 auto 79px auto;
+#portfolio .card {
+  border-radius: 10px;
+  height: 100%;
+  cursor: pointer;
 }
 
-#portfolio img {
-  margin-bottom: 32px;
+#portfolio .card img {
+  transition: 0.5s;
+}
+#portfolio .card img:hover {
+  scale: 1.1;
+  transition: 0.5;
+}
+#portfolio .card .btn {
+  transition: 0.5s;
 }
 
-/*----------------------
-Contact form
------------------------*/
-
-.form-control {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+#portfolio .card .btn:hover {
+  scale: 1.1;
+  background-color: black;
+  transition: 0.5;
 }
 
-/* Button */
-
-.btn {
-  border: 0 none;
-  border-radius: 0px;
-  font-size: 14px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 14px 24px;
+#contact {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: white;
 }
 
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus {
-  outline: 0 none;
+#contact h3 {
+  font-weight: 300;
 }
 
-.btn-black {
-  background: #000;
-  color: #fff;
+#contact a {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: white;
 }
 
-.btn-black:hover,
-.btn-black:focus {
-  background: #9400d3;
-}
-
-.btn-black:active,
-.btn-black.active {
-  background: #440360;
-  box-shadow: none;
-}
-
-/*----------------------
-Footer
------------------------*/
-
-footer p {
-  font-size: 12px;
-}
-
-.inline-link {
-  font-weight: bold;
-  color: #212121;
-}
-
-.inline-link:focus,
-.inline-link:active:focus {
-  outline: none;
-}
-
-.inline-link:hover,
-.inline-link:focus {
-  color: #9400d3 !important;
-}
-
-.inline-link:active,
-.inline-link:visited {
-  color: #440360;
-}
-
-/* Social media icons */
-
-.fa {
-  color: #212121;
-  font-size: 18px;
-  margin: 0 8px;
-}
-
-.fa:focus,
-.fa:active:focus {
-  outline: none;
-}
-
-.fa:hover,
-.fa:focus {
-  color: #9400d3;
-}
-
-.fa:active {
-  color: #440360;
-}
-
-/*--------------------
-Media Queries
-----------------------*/
-
-@media (max-width: 471px) {
-  #about {
-    min-height: 80vh;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-
-  #portfolio h2 {
-    margin-top: 36px;
+  50% {
+    background-position: 100% 50%;
   }
-
-  h2 {
-    font-size: 38px;
-  }
-}
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-  .title {
-    min-width: 544px;
+  100% {
+    background-position: 0% 50%;
   }
 }
